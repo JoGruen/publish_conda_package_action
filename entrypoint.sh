@@ -55,7 +55,7 @@ echo ">>>> CONDA PACKAGE UPLOADING <<<<"
 conda config --set anaconda_upload yes
 
 # login
-anaconda login --username $INPUT_CONDAUSERNAME --password $INPUT_CONDAPASSWORD
+export ANACONDA_API_TOKEN=$CONDA_API_TOKEN
 
 # to upload packages
 find temp_build/ -name *.tar.bz2 | while read file
