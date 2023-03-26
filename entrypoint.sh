@@ -27,6 +27,7 @@ echo ">>>> CONDA PACKAGE BUILDING <<<<"
 # add channels
 for CHANNEL in "${CHANNELS[@]}"
 do
+    echo ${CHANNEL}
     conda config --append channels $CHANNEL
 done
 
