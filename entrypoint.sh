@@ -32,7 +32,7 @@ do
 done
 
 # build the package
-conda mambabuild $INPUT_CONDADIR --output-folder temp_build
+conda build $INPUT_CONDADIR --output-folder temp_build
 
 # convert package for each platforms
 
